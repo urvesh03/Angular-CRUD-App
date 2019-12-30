@@ -1,0 +1,29 @@
+[
+    {
+        "name": "Urvesh",
+        "designation": "Software Dev",
+        "salary": 10000
+    },
+    {
+        "name": "Riya",
+        "designation": "Admin",
+        "salary": 5000
+    },
+    {
+        "name": "Vikram",
+        "designation": "Business Analyst",
+        "salary": 15000
+    },
+    {
+        "name": "Yogesh",
+        "designation": "CEO",
+        "salary": 75000
+    },
+    {
+        "name": "Sapna",
+        "designation": "HR",
+        "salary": 12500
+    }
+]
+
+

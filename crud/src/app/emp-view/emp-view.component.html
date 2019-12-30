@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <input
+                type="text"
+                class="form-control"
+                placeholder="Type to search..."
+                [(ngModel)]="searchString"
+            /><br/>
+            <table class="table table-dark" id="myTable">
+                <tr>
+                    <th>Name</th>
+                    <th>Designation</th>
+                    <th>Salary</th>
+                    <th>Action</th>
+                </tr>
+                <tr *ngFor="let emp of empDetails | filter : searchString; let i = index">
+                    <th>{{emp.name}}</th>
+                    <th>{{emp.designation}}</th>
+                    <th>{{emp.salary}}</th>
+                    <th>
+                        <button (click)="editEmployee(i)" class="btn btn-success">Edit</button>
+                        <button (click)="deleteEmployee(i)" style="margin-left:20px" class="btn btn-danger">Delete</button>
+                    </th>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
